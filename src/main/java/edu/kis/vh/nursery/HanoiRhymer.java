@@ -6,7 +6,11 @@ int totalRejected = 0;
 
 public int reportRejected() {
 <<<<<<< HEAD
+<<<<<<< HEAD
     return totalRejected;
+=======
+return totalRejected;
+>>>>>>> format
 =======
 return totalRejected;
 >>>>>>> format
