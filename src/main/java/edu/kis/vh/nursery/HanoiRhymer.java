@@ -5,7 +5,11 @@ public class HanoiRhymer extends defaultCountingOutRhymer {
 int totalRejected = 0;
 
 public int reportRejected() {
+<<<<<<< HEAD
     return totalRejected;
+=======
+return totalRejected;
+>>>>>>> format
 }
 
 public void countIn(int in) {
