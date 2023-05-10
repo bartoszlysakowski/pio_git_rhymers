@@ -11,25 +11,45 @@ public class DefaultCountingOutRhymer {
 
     public int total = -1;
 
+    /**
+     *
+     * @param in
+     */
     public void countIn(int in) {
         if (!isFull())
             numbers[++total] = in;
     }
 
+    /**
+     *
+     * @return result of comparison (0 or 1): total and STACK_EMPTY
+     */
     public boolean callCheck() {
         return total == STACK_EMPTY;
     }
 
+    /**
+     *
+     * @return result of comparison (0 or 1): total and MAX_INDEX
+     */
     public boolean isFull() {
         return total == MAX_INDEX;
     }
 
+    /**
+     *
+     * @return error or expected value, depending on callCheck() method's value
+     */
     protected int peekaboo() {
         if (callCheck())
             return ERROR;
         return numbers[total];
     }
 
+    /**
+     *
+     * @return error or expected value depending on callCheck() method's value
+     */
     public int countOut() {
         if (callCheck())
             return ERROR;
