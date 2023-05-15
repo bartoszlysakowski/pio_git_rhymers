@@ -6,10 +6,11 @@ public class DefaultCountingOutRhymer {
     public static final int ERROR = -1;
     public static final int STACK_EMPTY = -1;
     public static final int MAX_INDEX = 11;
+    public static final int TOTAL = -1;
 
     private final int[] numbers = new int[TAB_SIZE];
 
-    public int total = -1;
+    public int total = TOTAL;
 
     /**
      *
