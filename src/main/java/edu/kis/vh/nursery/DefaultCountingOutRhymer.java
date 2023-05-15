@@ -10,7 +10,14 @@ public class DefaultCountingOutRhymer {
 
     private final int[] numbers = new int[TAB_SIZE];
 
-    public int total = TOTAL;
+
+    public int getTotal() {
+        return total;
+    }
+
+    private int total = TOTAL;
+
+
 
     /**
      *
